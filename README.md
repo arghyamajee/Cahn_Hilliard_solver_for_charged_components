@@ -6,7 +6,7 @@ Multi-component systems can often demix into phases rich in certain component(s)
 
 The code solves mass-conservation equations
 
-$$\nu_i\partial_t c_i=-\nabla\cdot j_i,$$ 
+$$\nu_i\partial_t c_i=-\nabla\cdot j_i$$ 
 
 of the type of Cahn-Hilliard equations coupled with the Poisson equation 
 
