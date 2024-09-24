@@ -12,11 +12,11 @@ of the type of Cahn-Hilliard equations coupled with the Poisson equation 
 
 $$\nabla\cdot\left(\varepsilon \, \nabla\psi\right) =-\rho$$ 
 
-in a 1D set-up. Here 
+in a 1D set-up. The $i^{\mathrm{th}}$ component carries a molecular charge of $z_ie$, a molecular volume of $\nu_i$, and its concentration is given by $c_i(x)$. All the components together result in the local charge density 
 
-$$\rho(x)=\sum\limits_i z_i e c_i(x)$$ 
+$$\rho(x)=\sum\limits_i z_i e c_i(x)$$. 
 
-is the local charge density, and $z_ie$ is the the molecular charge, $\nu_i$ is the molecular volume, and $c_i(x)$ is the concentration of component $i$. The electrostatic potential $\psi(x)$ satisfies Dirichlet boundary conditions at the boundaries and a no-flux boundary condition is used for the concentration fields. The flux or the current $j_i$ of the $i^{\mathrm{th}}$ species is driven by the gradients in the electrochemical potential. The electrochemical potentials are calculated by describing the system using a Flory-Huggins description. For details of the model, please look at our published paper: [Phys. Rev. Research **6**, 033138 (2024)](https://doi.org/10.1103/PhysRevResearch.6.033138).
+The electrostatic potential $\psi(x)$ satisfies Dirichlet boundary conditions at the boundaries and a no-flux boundary condition is used for the concentration fields. The flux or the current $j_i$ of the $i^{\mathrm{th}}$ species is driven by the gradients in the electrochemical potential. The electrochemical potentials are calculated by describing the system using a Flory-Huggins description. For details of the model, please look at our published paper: [Phys. Rev. Research **6**, 033138 (2024)](https://doi.org/10.1103/PhysRevResearch.6.033138).
 
 The code uses a combination of spectral, finite difference, and Runge-Kutta (RK4) methods to solve these coupled sets of equations for a system comprising 3 components (i.e., $i=3$): a positively charged component, a negatively charged, and a neutral one. The laplacian in the Poisson equation is calculated using spectral representation, where for the mass conservation equations, finite difference representation is used.
 
