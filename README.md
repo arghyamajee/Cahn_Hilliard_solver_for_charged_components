@@ -26,4 +26,4 @@ After compiling (e.g., using the command: g++ -lfftw3 -lm RK4.cpp -o RK4.out), 
 
 <img src="Plot.png" width="850" height="350">
 
-(a) Concentration fields $c_\pm(x)$ in the units of $\mathrm{nm}^{-3}$ and electrostatic potential $\psi(x)$ in the units of $k_BT/e$. (b) The resulting charge density $\rho(x)$.
+Fig. 1: (a) Concentration fields $c_\pm(x)$ in the units of $\mathrm{nm}^{-3}$ and electrostatic potential $\psi(x)$ in the units of $k_BT/e$ as function of the position $x$. All the three variables have a high value in the dense phase (left side of teh system) and change to low value while going across the interface to the dilute phase (right side of the system). (b) The resulting charge density $\rho(x)$ as function of the position $x$. While the bulk of the two phases remain charge-neutral, a charge separation takes place around the interface leading to an electric double layer type of structure.  
